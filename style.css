@@ -19,6 +19,15 @@ h1 {
     color: rgb(221, 71, 71);
 }
 
+error-ouput.email-error {
+    font-size: 12px;
+    font-style: italic;
+    color: red;
+    flex-flow: row;
+    margin: auto;
+}
+
+
 .headerContainer {
     display: flex;
     flex-flow: column;
@@ -85,6 +94,8 @@ error-output {
     font-style: italic;
     color: red;
     flex-flow: row;
+    margin: auto;
+
 
 }
 
@@ -92,3 +103,33 @@ error-output {
     font-size: medium;
     font-weight: 600;
 }
+
+@media screen and (min-width: 400px) {
+    body {
+      background-color: lightgreen;
+    }
+    .column {
+        width: 100%;
+      }
+  }
+  
+  @media screen and (min-width: 800px) {
+    body {
+      background-color: lavender;
+    }
+    .column {
+        width: 50%;
+      }
+  }
+
+  @media screen and (max-width: 992px) {
+    .column {
+      width: 50%;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
